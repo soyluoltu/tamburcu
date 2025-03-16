@@ -5,7 +5,7 @@ Bu proje, 2 mil üzerinde dönen silindirik bir tambur makinesinin açık kaynak
 
 ![Tambur Makinesi Görseli](docs/images/device-overview.jpg)
 
-## Özellikler
+## ℹ️ Genel Özellikler ℹ️
 
 - **Güç Kaynağı**: DC⎓20V, 4.5A
 - **Maksimum Devir**: 5000 RPM
@@ -14,7 +14,7 @@ Bu proje, 2 mil üzerinde dönen silindirik bir tambur makinesinin açık kaynak
 - **Göstergeler**: Açık/Kapalı ışığı, Motor LED göstergesi
 - **Tambur**: 2 mil üzerinde dönen silindirik yapı
 
-## ⚠️ Uyarı
+## ⚠️ Uyarı ⚠️
 
 Bu makine DIY (Kendin Yap) prensibiyle, kişisel kullanım amacıyla tasarlanmıştır ve ticari veya endüstriyel amaçlı kullanım için uygun değildir. Profesyonel standartlara ve sertifikalara sahip değildir. **Kullanımdan doğabilecek risklerin sorumluluğu kullanıcıya aittir.**
 
@@ -80,6 +80,8 @@ Bu projenin temel amacı, kullanıcıların kendi ihtiyaçlarına göre makineyi
 - Dijital hız kontrolü ekleme
 - Zamanlayıcı işlevi ekleme
 - Sıcaklık sensörü ekleme
+- Mobil uygulama uyumluluğu
+- Çeşitli durumlar için alarm
 
 ## Katkıda Bulunma
 
@@ -91,15 +93,23 @@ Bu projenin temel amacı, kullanıcıların kendi ihtiyaçlarına göre makineyi
 
 Daha fazla bilgi için [CONTRIBUTING.md](CONTRIBUTING.md) dosyasına bakınız.
 
-## Lisans
+## ⚠️Lisans⚠️
 
-Bu proje [MIT Lisansı](LICENSE) altında dağıtılmaktadır.
+Bu proje [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/) lisansı altında dağıtılmaktadır.
+
+Bu lisans kapsamında:
+- Projeyi kopyalayabilir ve yeniden dağıtabilirsiniz
+- Projeyi uyarlayabilir, düzenleyebilir ve geliştirebilirsiniz
+- Orijinal projeye ve yaratıcısına uygun atıfta bulunmanız gerekir
+- Projeyi ticari amaçlarla kullanamazsınız
+
+## ⚠️⚠️⚠️ Ticari kullanım için proje sahibinden özel izin almanız gerekmektedir. ⚠️⚠️⚠️
 
 ## İletişim
 
 Proje Sahibi - [E-posta adresi]
 
-Proje Linki: [https://github.com/kullanici/tambur-makinesi](https://github.com/kullanici/tambur-makinesi)
+Proje Linki: [https://github.com/kullanici/tambur-makinesi](https://github.com/soyluoltu/tamburcu)
 
 ---
 
