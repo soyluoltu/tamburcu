@@ -4,13 +4,14 @@ Bu döküman, Tambur Makinesi'nin güvenli bir şekilde kullanılması için tak
 
 ## ⚠️ Genel Güvenlik Uyarıları ⚠️
 
-- Bu cihaz DIY (Kendin Yap) prensibiyle tasarlanmıştır ve profesyonel veya endüstriyel standartlara sahip değildir
-- Kullanım öncesi tüm talimatları okuyun ve anlayın
-- Cihazı çocukların erişemeyeceği yerlerde kullanın ve saklayın
+- Bu cihaz DIY (Kendin Yap) prensibiyle tasarlanmıştır profesyonel veya endüstriyel standartlara olabildiğince uyulmaya çalışılmıştır. Fakat hiçbir endüstriyel standarda sahip değildir
+- Kullanım öncesi tüm talimatları okuyun ve anladığınızdan emin olun.
+- Cihazı çocukların ve evcil hayvanların erişemeyeceği yerlerde kullanın ve saklayın.
 - Cihazı kullanırken daima gözetim altında tutun, asla çalışır durumda bırakıp gitmeyin
 - Alkol, ilaç etkisi altında veya yorgunken cihazı kullanmayın
 - Cihazın herhangi bir parçasında hasar varsa kullanmayın
-- Takı, kravat, uzun saç gibi cihaza dolanabilecek unsurları güvenli hale getirmeden cihazı çalıştırmayın
+- Takı, kravat, uzun saç gibi cihaza dolanabilecek unsurları güvenli hale getirmeden cihazı çalıştırmayın.
+- Cihaz çalışırken ASLA dönen parçalara dokunmayın.
 
 ## 🔌 Elektrik Güvenliği 🔌
 
@@ -18,7 +19,7 @@ Bu döküman, Tambur Makinesi'nin güvenli bir şekilde kullanılması için tak
 - Islak ellerle elektrik fişine, kablosuna veya cihaza dokunmayın
 - Güç kablosunu yanıcı yüzeylerden ve sıcak parçalardan uzak tutun
 - Hasar görmüş güç kablosu veya fiş ile cihazı çalıştırmayın
-- Bakım, temizlik veya parça değişimi öncesi cihazın fişini çekin
+- Bakım, temizlik veya parça değişimi öncesi cihazın fişini daima çekin
 - Kullanılmadığında cihazın fişini prizden çıkarın
 - Güç kaynağı veya elektrik parçalarına sıvı dökülmesini önleyin
 - Elektrik sistemini hiçbir şekilde modifiye etmeyin
@@ -26,38 +27,41 @@ Bu döküman, Tambur Makinesi'nin güvenli bir şekilde kullanılması için tak
 ## ⚙️ Mekanik Güvenlik ⚙️
 
 - Cihaz çalışırken hareketli parçalara dokunmayın
-- Tamburun kapağını cihaz çalışırken açmayın
+- Tamburu veya diğer silindirik ürünleri cihaz çalışırken cihaza yerleştirmeyin veya yerinden almayın.
 - Cihazı düz, dengeli ve sağlam bir yüzeye yerleştirin
-- Her kullanımdan önce tamburun ve diğer parçaların sağlam bir şekilde monte edildiğinden emin olun
-- Maksimum yük kapasitesini (500g) aşmayın
+- Her kullanımdan önce tamburun ve diğer parçaların sağlam bir şekilde yerleştirildiğinden emin olun.
+- Cihaz çalıştırıldığında bir süre tamburun veya silindirik ürünün ileri geri gitmediğinden emin olun.
+- Maksimum yük kapasitesini (5000g) aşmayın
 - Cihaz çalışırken onu hareket ettirmeyin
-- Tambur durduktan sonra kapağı açın
-- Parçaları sökerken veya takarken uygun araçlar kullanın
+- Tambur durduktan sonra yerinden alın.
+- Parçaları sökerken veya takarken cihaz ile gönderilen uygun araçlar kullanın.
 - Aşınmış veya hasar görmüş mil, rulman veya tambur parçalarını değiştirin
+- WD40 ve benzeri pas ve yağ temizleyici ürünler ile cihazı yağlamayın.
 
 ## ⏱️ Çalışma Süresi ve Aşırı Isınma ⏱️
 
-- Cihazı sürekli olarak 1 saatten fazla çalıştırmayın
-- Her 1 saatlik çalışmadan sonra en az 30 dakika soğumaya bırakın
+- Cihazı sürekli olarak 10 saatten fazla çalıştırmayın
+- Her 10 saatlik çalışmadan sonra en az 30 dakika soğumaya bırakın
 - Motor veya diğer parçaların anormal şekilde ısındığını fark ederseniz cihazı derhal kapatın
 - Aşırı ısınma durumunda acil durum kapatma prosedürünü uygulayın (bkz. Acil Durum Prosedürleri)
-- Uzun süre kullanılmayacaksa cihazı tozdan ve nemden koruyun
+- Uzun süre kullanılmayacaksa cihazı tozdan ve nemden koruyun. Korozyona uğramaması için milleri ve yataklarını yağlayarak kaldırın.
+
 
 ## 👁️ Kişisel Koruyucu Ekipman 👁️
 
 - Cihazı kullanırken her zaman koruyucu gözlük takın
 - Gerektiğinde kulak koruyucu kullanın (özellikle uzun süreli kullanımlarda)
-- Cihazı kullanırken eldiven GİYMEYİN (dönen parçalara kapılma riski)
+- Cihazı kullanırken eldiven GİYMEYİN (dönen parçalara kapılma riski vardır)
 - Tozlu malzemelerle çalışırken toz maskesi takın
-- Uygun iş kıyafetleri giyin, bol giysiler veya sarkan parçalar olmamalı
+- Uygun iş kıyafetleri giyin, bol giysiler veya sarkan parçalar ile cihaza yaklaşmayın.
 
 ## 🧪 Malzeme Güvenliği 🧪
 
-- Patlayıcı, yanıcı veya toksik malzemeleri tambur içinde işlemeyin
-- Sert, sivri veya keskin nesneleri (cam, keskin metal parçaları vb.) tambur içine koymayın
+- Patlayıcı, parlayıcı, yanıcı veya toksik malzemeleri tambur içinde işlemeyin
 - İşlenmemiş veya işlenmiş malzemelerin güvenlik bilgi formlarını (SDS) inceleyin
 - Malzemelerin kimyasal uyumluluğunu kontrol edin
 - İşleme sonrası atıkları yerel düzenlemelere uygun olarak bertaraf edin
+- Tambur veya silindirik ürünler tamamen kapalı kullanılacakları için kullanım esnasında gaz çıkarabilecek ürünleri kullanmaktan kaçının.
 
 ## 🚨 Acil Durum Prosedürleri 🚨
 
