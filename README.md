@@ -3,11 +3,11 @@
 
 Bu proje, 2 mil üzerinde dönen silindirik bir tambur makinesinin açık kaynak tasarımını içermektedir. Polisaj, aşındırma ve benzeri DIY işlemleri için tasarlanmış bu makine, evde kullanım amaçlı olup tamamen değiştirilebilir ve geliştirilebilir yapıdadır.
 
-![Tambur Makinesi Görseli](docs/images/device-overview.jpg)
+![Tambur Makinesi Görseli](docs/images/device-overview.png)
 
 ## ℹ️ Genel Özellikler ℹ️
 
-- **Güç Kaynağı**: DC⎓20V, 4.5A
+- **Güç Kaynağı**: DC⎓12-20V, 4A
 - **Maksimum Devir**: 5000 RPM
 - **Kontrol Sistemi**: Ayarlanabilir potansiyometre
 - **Güvenlik Elemanları**: Resetlenebilir sigorta
@@ -24,16 +24,15 @@ Projeyi oluşturmak için gereken temel malzemeler:
 
 | Parça | Miktar | Açıklama |
 |-------|--------|----------|
-| DC Motor | 1 | 20V, 4.5A ile çalışabilen |
-| Potansiyometre | 1 | 10k Ohm |
+| DC Motor | 1 | RS-775 24V 15000Rpm |
+| Potansiyometre | 1 | 100k Ohm |
 | Resetlenebilir Sigorta | 1 | 5A |
-| Açma/Kapama Düğmesi | 1 | SPST tipi |
+| Açma/Kapama Düğmesi | 1 | DPST tipi |
 | LED | 2 | Güç ve motor göstergeleri için |
-| Plastik Kasa | 1 | 3B yazıcı ile üretilebilir |
-| Silindirik Tambur | 1 | 3B yazıcı ile üretilebilir |
-| Mil | 2 | 8mm çap, paslanmaz çelik |
-| Rulmanlar | 4 | 608ZZ tipi |
-| Kablolar ve Konnektörler | Çeşitli | |
+| Mil | 2 | 10mm çap, Krom Kaplı İndüksiyonlu Mil|
+| Rulmanlı Mil Yatağı | 4 | UP000 / KP000 tipi |
+| Konnektör | 1 | GX-12 3P Dişi-Erkek 3 Pinli Mike Konnektör  |
+| Kablolar  | Çeşitli | 14-18 AWG |
 | Güç Adaptörü | 1 | 20V, 4.5A |
 
 Detaylı malzeme listesi için [hardware/bom.csv](hardware/bom.csv) dosyasına bakınız.
@@ -107,7 +106,6 @@ Bu lisans kapsamında:
 
 ## İletişim
 
-Proje Sahibi - [E-posta adresi]
 
 Proje Linki: [https://github.com/kullanici/tambur-makinesi](https://github.com/soyluoltu/tamburcu)
 

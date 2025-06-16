@@ -1,0 +1,28 @@
+Parça Adı,Miktar,Açıklama,Parça Numarası,Tedarikçi Önerisi,Tahmini Fiyat (TL),Alternatif
+DC Motor,1,20V 4.5A DC motor (min. 500W),MOT-DC-500W,Aliexpress/Amazon,450,Johnson Electric/Mabuchi Motor
+Potansiyometre,1,10K Ohm döner potansiyometre,POT-10K-LIN,Elektronik Malzeme Tedarikçileri,15,Bourns/Alps
+Resetlenebilir Sigorta,1,5A PTC sigorta,PTC-5A,Elektronik Malzeme Tedarikçileri,25,Littelfuse/TE Connectivity
+Açma/Kapama Düğmesi,1,16A 250V SPST düğmesi,SW-SPST-16A,Elektronik Malzeme Tedarikçileri,20,Carling Technologies
+LED (Kırmızı),1,Güç göstergesi için 5mm,LED-5MM-RED,Elektronik Malzeme Tedarikçileri,2,Osram/Cree
+LED (Yeşil),1,Motor göstergesi için 5mm,LED-5MM-GREEN,Elektronik Malzeme Tedarikçileri,2,Osram/Cree
+Direnç,2,"220 Ohm, 1/4W (LED'ler için)",RES-220-025W,Elektronik Malzeme Tedarikçileri,1,Yageo/Vishay
+Plastik Kasa,1,3B baskı için ABS filament (500g),FIL-ABS-500G,Filament Tedarikçileri,200,eSun/Ultimaker
+Silindirik Tambur,1,3B baskı için PETG filament (250g),FIL-PETG-250G,Filament Tedarikçileri,120,eSun/Ultimaker
+Mil,2,"8mm çap, 30cm uzunluk, paslanmaz çelik",ROD-8MM-SS,Hırdavat/Makine Tedarikçileri,60,Herhangi bir paslanmaz çelik tedarikçisi
+Rulmanlar,4,608ZZ rulman,BEAR-608ZZ,Hırdavat/Makine Tedarikçileri,40,SKF/NSK
+Mil Bağlantı Elemanları,2,8mm mil için kuplör,COUPLER-8MM,Hırdavat/Makine Tedarikçileri,45,Herhangi bir makine parçası tedarikçisi
+Güç Adaptörü,1,20V 4.5A DC adaptör (90W min.),PSU-20V-4.5A,Elektronik Malzeme Tedarikçileri,250,Mean Well/Delta
+DC Giriş Jakı,1,2.1mm x 5.5mm panel montajlı,CON-DC-PANEL,Elektronik Malzeme Tedarikçileri,10,Switchcraft/Molex
+Kablo Seti,1,"22 AWG, çeşitli renkler",WIRE-22AWG-SET,Elektronik Malzeme Tedarikçileri,30,Alpha Wire/Belden
+Isı Shrink Tüp,1,Çeşitli boyutlarda set,HEAT-SHRINK-SET,Elektronik Malzeme Tedarikçileri,15,3M/Raychem
+PCB,1,Motor sürücü devresi (opsiyonel),PCB-CUSTOM,PCB Üreticileri,50,PCBWay/JLCPCB
+Vidalar,1,Çeşitli boyutlarda set (M3/M4),SCREW-SET,Hırdavat/Makine Tedarikçileri,30,Herhangi bir hırdavat tedarikçisi
+Somunlar,1,Çeşitli boyutlarda set (M3/M4),NUT-SET,Hırdavat/Makine Tedarikçileri,20,Herhangi bir hırdavat tedarikçisi
+Panel Terminal,1,2 yollu terminal blok,TERM-2WAY,Elektronik Malzeme Tedarikçileri,15,Phoenix Contact/Wago
+Termal Macun,1,Küçük tüp (3g),THERMAL-PASTE,Elektronik Malzeme Tedarikçileri,20,Arctic Silver/Thermal Grizzly
+Conta Seti,1,Sızdırmazlık için silikon O-ring seti,O-RING-SET,Hırdavat/Makine Tedarikçileri,25,Parker/Freudenberg
+Montaj Plakası,1,Motor montajı için alüminyum plaka (15x15cm),PLATE-ALU-15,Metal Tedarikçileri,60,Herhangi bir metal tedarikçisi
+Gres Yağı,1,Rulmanlar için endüstriyel gres (50g),GREASE-IND-50G,Hırdavat/Makine Tedarikçileri,40,Mobilgrease/Shell Gadus
+Titreşim Önleyici Ayaklar,4,Lastik ayaklar,FOOT-RUBBER,Hırdavat/Makine Tedarikçileri,30,3M/McMaster-Carr
+Kablo Kelepçeleri,1,Çeşitli boyutlarda set,CABLE-TIE-SET,Elektronik Malzeme Tedarikçileri,10,Panduit/HellermannTyton
+Etiketler,1,Güvenlik etiketleri seti,LABEL-SAFETY,Kırtasiye/Baskı Tedarikçileri,15,Brady/3M
