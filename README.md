@@ -1,5 +1,5 @@
-# tamburcu S3009
-# Silindirik Tambur Makinesi
+# Tamburcu S3009
+# Silindirik Tambur Aşındırma, Polisaj ve Karıştırma Makinesi
 
 Bu proje, 2 mil üzerinde dönen silindirik bir tambur makinesinin açık kaynak tasarımını içermektedir. Polisaj, aşındırma ve benzeri DIY işlemleri için tasarlanmış bu makine, evde kullanım amaçlı olup tamamen değiştirilebilir ve geliştirilebilir yapıdadır.
 
@@ -8,11 +8,13 @@ Bu proje, 2 mil üzerinde dönen silindirik bir tambur makinesinin açık kaynak
 ## ℹ️ Genel Özellikler ℹ️
 
 - **Güç Kaynağı**: DC⎓12-20V, 4A
-- **Maksimum Devir**: 5000 RPM
+- **Maksimum Mil Deviri**: 5000 RPM
+- **Maksimum Motor Deviri**: 15000 RPM 
 - **Kontrol Sistemi**: Ayarlanabilir potansiyometre
 - **Güvenlik Elemanları**: Resetlenebilir sigorta
 - **Göstergeler**: Açık/Kapalı ışığı, Motor LED göstergesi
 - **Tambur**: 2 mil üzerinde dönen silindirik yapı
+- **Mil üzerinde Kauçuk lateks kaplama parçaları sayesinde yüksek tutuculuk sağlar.**
 
 ## ⚠️ Uyarı ⚠️
 
@@ -34,6 +36,7 @@ Projeyi oluşturmak için gereken temel malzemeler:
 | Konnektör | 1 | GX-12 3P Dişi-Erkek 3 Pinli Mike Konnektör  |
 | Kablolar  | Çeşitli | 14-18 AWG |
 | Güç Adaptörü | 1 | 20V, 4.5A |
+| Sigma Profil | Çeşitli | 30x30 
 
 Detaylı malzeme listesi için [hardware/bom.csv](hardware/bom.csv) dosyasına bakınız.
 
@@ -46,7 +49,7 @@ Detaylı malzeme listesi için [hardware/bom.csv](hardware/bom.csv) dosyasına b
 
 Detaylı montaj talimatları için [docs/assembly-guide.md](docs/assembly-guide.md) dosyasına bakınız.
 
-## Kullanım
+## Kullanım Uyarılarını Okumadan Kullanmayın.
 
 1. Makineyi düz ve sağlam bir zemine yerleştirin
 2. Güç kablosunu bağlayın
@@ -59,12 +62,12 @@ Detaylı kullanım talimatları için [docs/user-manual.md](docs/user-manual.md)
 
 ## Güvenlik Önlemleri
 
-- Kullanım öncesi tamburun sağlam bir şekilde kapatıldığından emin olun
-- Çalışırken tamburdan ve hareketli parçalardan ellerinizi ve giysilerinizi uzak tutun
-- Makineyi gözetimsiz çalışır halde bırakmayın
-- Her kullanımdan önce tamburu çatlak veya hasar açısından kontrol edin
-- Sürekli 1 saatten fazla çalıştırmayın
-- Çocukların erişemeyeceği yerlerde kullanın ve saklayın
+- Kullanım öncesi tamburun sağlam bir şekilde kapatıldığından emin olun. Herhangi bir sıvı sızması olmadığından emin olun. 
+- Çalışırken tamburdan ve hareketli parçalardan ellerinizi ve giysilerinizi uzak tutun.
+- Makineyi gözetimsiz çalışır halde bırakmayın.
+- Her kullanımdan önce tamburu çatlak veya hasar açısından kontrol edin. 
+- Sürekli 10 saatten fazla çalıştırmayın. Tambur ağırlığı arttıkça bu süre kısalır.
+- Kesinlikle çocukların ve evcil hayvanların erişemeyeceği yerlerde kullanın ve saklayın.
 
 ## Sorun Giderme
 
@@ -80,7 +83,7 @@ Bu projenin temel amacı, kullanıcıların kendi ihtiyaçlarına göre makineyi
 - Zamanlayıcı işlevi ekleme
 - Sıcaklık sensörü ekleme
 - Mobil uygulama uyumluluğu
-- Çeşitli durumlar için alarm
+- Çeşitli durumlar için alarm (Sıkışma, aşırı hızlı dönme gibi)
 
 ## Katkıda Bulunma
 
@@ -99,10 +102,10 @@ Bu proje [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC
 Bu lisans kapsamında:
 - Projeyi kopyalayabilir ve yeniden dağıtabilirsiniz
 - Projeyi uyarlayabilir, düzenleyebilir ve geliştirebilirsiniz
-- Orijinal projeye ve yaratıcısına uygun atıfta bulunmanız gerekir
-- Projeyi ticari amaçlarla kullanamazsınız
+- Orijinal projeye ve yaratıcısına uygun atıfta bulunmanız gerekir!
+- Projeyi ticari amaçlarla kullanamazsınız!
 
-## ⚠️⚠️⚠️ Ticari kullanım için proje sahibinden özel izin almanız gerekmektedir. ⚠️⚠️⚠️
+## ⚠️⚠️⚠️ Projenin ticari kullanımı için proje sahibinden özel izin almanız gerekmektedir. ⚠️⚠️⚠️
 
 ## İletişim
 
