@@ -110,7 +110,7 @@ Bu lisans kapsamında:
 ## İletişim
 
 
-Proje Linki: [https://github.com/kullanici/tambur-makinesi](https://github.com/soyluoltu/tamburcu)
+Proje Linki: [https://github.com/soyluoltu/tamburcu](https://github.com/soyluoltu/tamburcu)
 
 ---
 
