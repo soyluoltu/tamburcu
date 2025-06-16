@@ -31,6 +31,8 @@ Montaja başlamadan önce aşağıdaki parçaların tam olduğundan emin olun:
 | Kablolar | Çeşitli | Farklı renk ve uzunluklarda |
 | Vida Seti | 1 | Çeşitli boyutlarda |
 
+
+
 ### Aletler
 
 | Alet | Kullanım Amacı |
@@ -48,6 +50,27 @@ Montaja başlamadan önce aşağıdaki parçaların tam olduğundan emin olun:
 | Makas | Kablo ve makaron kesimi |
 | Koruyucu Gözlük | Montaj sırasında güvenlik |
 | Çalışma Eldiveni | Keskin kenarlardan korunma |
+
+
+## Resimleri ile Parçalar
+### Motor: RS775 DC Motor 24V 15000Rpm
+![RS775 DC Motor 24V 15000Rpm](images/RS775.jpg)
+
+### Motor Sürücüsü: PWM DC Motor Hız Kontrol Modülü 9-60V 20A
+![PWM DC Motor Hız Kontrol Modülü 9-60V 20A](images/Motor-Driver.jpg)
+
+### Güç Girişi Adaptör Tarafı: MAYK Fiş - 3P Dişi
+![MAYK Fiş - 3P Dişi](images/Mayk-Fem.jpg)
+
+### Güç Girişi Cihaz Tarafı: MAYK Fiş 3P Erkek Şase
+![MAYK Fiş 3P Erkek Şase](images/Mayk-Male.jpg)
+
+### Güç Girişi Cihaz Tarafı: MAYK Fiş 3P Erkek Şase
+![MAYK Fiş 3P Erkek Şase](images/Mayk-Male.jpg)
+
+
+
+
 
 ## 🔩 Montaj Öncesi Hazırlık
 
@@ -277,5 +300,6 @@ Her montaj sonrası aşağıdaki kontrolleri yapın:
 ---
 
 Bu montaj rehberi, Tambur Makinesi'nin doğru bir şekilde monte edilmesi için temel adımları içermektedir. Montaj sırasında herhangi bir sorunla karşılaşırsanız veya daha fazla bilgiye ihtiyaç duyarsanız, lütfen teknik destek için iletişime geçin.
+
 
 **SON GÜNCELLEME**: 16.03.2025
