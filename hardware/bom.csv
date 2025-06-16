@@ -1,6 +1,6 @@
 Parça Adı,Miktar,Açıklama,Parça Numarası,Tedarikçi Önerisi,Tahmini Fiyat (TL),Alternatif
-DC Motor,1,20V 4.5A DC motor (min. 500W),MOT-DC-500W,Aliexpress/Amazon,450,Johnson Electric/Mabuchi Motor
-Potansiyometre,1,10K Ohm döner potansiyometre,POT-10K-LIN,Elektronik Malzeme Tedarikçileri,15,Bourns/Alps
+DC Motor,1,20V 4.5A DC motor (min. 90W),MOT-DC-500W,Aliexpress/Amazon,450,Johnson Electric/Mabuchi Motor
+Potansiyometre,1,100K Ohm döner potansiyometre,POT-100K-LIN,Elektronik Malzeme Tedarikçileri,15,Bourns/Alps
 Resetlenebilir Sigorta,1,5A PTC sigorta,PTC-5A,Elektronik Malzeme Tedarikçileri,25,Littelfuse/TE Connectivity
 Açma/Kapama Düğmesi,1,16A 250V SPST düğmesi,SW-SPST-16A,Elektronik Malzeme Tedarikçileri,20,Carling Technologies
 LED (Kırmızı),1,Güç göstergesi için 5mm,LED-5MM-RED,Elektronik Malzeme Tedarikçileri,2,Osram/Cree
@@ -26,3 +26,22 @@ Gres Yağı,1,Rulmanlar için endüstriyel gres (50g),GREASE-IND-50G,Hırdavat/M
 Titreşim Önleyici Ayaklar,4,Lastik ayaklar,FOOT-RUBBER,Hırdavat/Makine Tedarikçileri,30,3M/McMaster-Carr
 Kablo Kelepçeleri,1,Çeşitli boyutlarda set,CABLE-TIE-SET,Elektronik Malzeme Tedarikçileri,10,Panduit/HellermannTyton
 Etiketler,1,Güvenlik etiketleri seti,LABEL-SAFETY,Kırtasiye/Baskı Tedarikçileri,15,Brady/3M
+
+
+Parça No,Kategori,Alt Kategori,Parça Adı,Açıklama,Miktar,Birim,Temel Ölçüler,Malzeme/Tür,Tedarikçi Önerileri,Yaklaşık Maliyet (TL),Toplam Maliyet (TL),Alternatifler,Zorunluluk,Dosya Referansı,Notlar
+E001,Elektronik,Motor,DC Motor,20V 4.5A DC Motor yüksek tork,1,Adet,60x40mm,Bakır/Çelik,"Amazon, AliExpress",250,250,"24V 4A motor (daha düşük devir), 12V 5A motor (daha düşük tork)",Gerekli,hardware/schematics/main-circuit.pdf,Motorun soğutma kanallarını kapatmayın
+E002,Elektronik,Kontrol,Potansiyometre,10k Ohm lineer potansiyometre,1,Adet,15mm şaft,Metal/Plastik,"Robotistan, Direnc.net",15,15,10k Ohm logaritmik potansiyometre,Gerekli,hardware/schematics/main-circuit.pdf,Tozdan koruyun
+E003,Elektronik,Güvenlik,Resetlenebilir Sigorta,5A resetlenebilir sigorta (PTC),1,Adet,5x10mm,Seramik,"Robotistan, AliExpress",10,10,Cam sigorta + yuva (daha az yer kaplar),Gerekli,hardware/schematics/main-circuit.pdf,Kolay erişilebilir konumlandırın
+E004,Elektronik,Kontrol,Açma/Kapama Düğmesi,SPST tip 2 pozisyonlu anahtar,1,Adet,20x15mm,Plastik/Metal,"Robotistan, AliExpress",12,12,Işıklı tip anahtar,Gerekli,hardware/schematics/main-circuit.pdf,Su ve tozdan koruyun
+E005,Elektronik,Gösterge,LED (Güç),Yeşil 5mm LED gösterge,1,Adet,5mm,Plastik/LED,"Direnc.net, AliExpress",2,2,SMD LED (daha az yer kaplar),Gerekli,hardware/schematics/main-circuit.pdf,220 Ohm direnç ile kullanın
+E006,Elektronik,Gösterge,LED (Motor),Kırmızı 5mm LED gösterge,1,Adet,5mm,Plastik/LED,"Direnc.net, AliExpress",2,2,SMD LED (daha az yer kaplar),Gerekli,hardware/schematics/main-circuit.pdf,220 Ohm direnç ile kullanın
+E007,Elektronik,Güç,Güç Girişi Konektörü,DC Jack Konektör (5.5x2.1mm),1,Adet,14x9mm,Plastik/Metal,"Robotistan, AliExpress",5,5,Terminal blok,Gerekli,hardware/schematics/main-circuit.pdf,Montaj için sabitleyin
+E008,Elektronik,Güç,Güç Adaptörü,20V 4.5A adaptör (5.5x2.1mm),1,Adet,120x50x30mm,Plastik/Elektronik,"Amazon, Hepsiburada",150,150,"19V 4.7A laptop adaptörü (daha yaygın), 24V 4A adaptör (daha yüksek tork)",Gerekli,hardware/schematics/power-supply.pdf,CE sertifikalı tercih edin
+E009,Elektronik,Bağlantı,Kablolar (İç Bağlantı),İç bağlantı için 22AWG kablo seti,1,Set,Çeşitli uzunluklar,Bakır/PVC,"Direnc.net, Robotistan",20,20,Silikon kaplı kablolar (daha esnek),Gerekli,hardware/schematics/main-circuit.pdf,Renk kodlarına dikkat edin
+E010,Elektronik,Bağlantı,Konnektörler Seti,Çeşitli boyutlarda JST konnektör seti,1,Set,Çeşitli,Plastik/Metal,"AliExpress, Robotistan",15,15,"Crimp konnektörler, lehim bağlantı",Gerekli,hardware/schematics/main-circuit.pdf,İyi crimpleme yapın
+E011,Elektronik,Devre,Direnç Seti,Çeşitli dirençler (220Ω LED için vb.),1,Set,Çeşitli,Seramik/Metal,"Direnc.net, AliExpress",10,10,SMD dirençler,Gerekli,hardware/schematics/main-circuit.pdf,Renk kodlarını kontrol edin
+E012,Elektronik,Kontrol,Arduino Nano,Mikrodenetleyici (isteğe bağlı),1,Adet,45x18mm,PCB/Elektronik,"Robotistan, Amazon",120,120,"Arduino Uno (daha büyük), ESP32 (WiFi özellikli)",Opsiyonel,firmware/src/main.ino,Gelişmiş kontrol için
+M001,Mekanik,Dönüş Sistemi,Mil,8mm çap paslanmaz çelik mil,2,Adet,30cm,Paslanmaz Çelik,"Hırdavatçılar, AliExpress",30,60,Alüminyum mil (daha hafif),Gerekli,hardware/3d-models/source/tambur.step,Uçlarını zımparalayın
+M002,Mekanik,Dönüş Sistemi,Rulman,608ZZ rulman (8x22x7mm),4,Adet,8x22x7mm,Çelik,"Rulman satıcıları, AliExpress",15,60,608RS (sızdırmaz model),Gerekli,hardware/3d-models/source/mounting-parts.step,Düzenli yağlama yapın
+M003,Mekanik,Dönüş Sistemi,Rulman Yatakları,Rulman yuvaları,4,Adet,30x30x15mm,PLA/PETG,"3B basım, STL dosyasından",0,0,Alüminyum yatak (daha dayanıklı),Gerekli,hardware/3d-models/stl/mounting-parts.stl,PETG tercih edin
+M004,Mekanik,Bağlantı,Motor Kaplin,8mm - Motor mili bağlantı kaplini,1,Adet,25x20mm,Alüminyum/Çelik,"Hırdavatçılar, AliExpress",40,40,Esnek kaplin (titreşim azaltıcı),Gerekli,hardware/3d-models/source/mounting-parts.step,Vidaları Loctite ile sabitleyin

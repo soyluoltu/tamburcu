@@ -146,7 +146,9 @@ Detaylı güvenlik bilgileri için [safety-guidelines.md](safety-guidelines.md) 
 - Mil yataklarını ve millerin dönüş rahatlığını kontrol edin. 
 - Dişli koruma kapağını sökerek Zamanlayıcı kemerin aşınmasını kontrol edin. Bir çatlama veya aşınma var ise değiştirin.
 - Milleri kontrol ederken takılma veya gıcırtı duyarsanız yatakları kontrol edin, gerekirse mil rulmanlarını değiştirin.
-![Alt text for your image](docs/images/UP000.jpeg)
+
+![Alt text for your image](images/UP000.jpeg)
+
 Detaylı bakım talimatları için [maintenance-guide.md](maintenance-guide.md) dosyasına bakınız.
 
 ## 🔍 Sorun Giderme
