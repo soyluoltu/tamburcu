@@ -3,7 +3,7 @@
 
 Bu proje, 2 mil üzerinde dönen silindirik bir tambur makinesinin açık kaynak tasarımını içermektedir. Polisaj, aşındırma ve benzeri DIY işlemleri için tasarlanmış bu makine, evde kullanım amaçlı olup tamamen değiştirilebilir ve geliştirilebilir yapıdadır.
 
-![Tambur Makinesi Görseli](docs/images/device-overview.png)
+![Tambur Makinesi Görseli](docs/images/device-overview_all.png)
 
 ## ℹ️ Genel Özellikler ℹ️
 
