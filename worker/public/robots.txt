@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tambur.canliol.com/sitemap.xml
