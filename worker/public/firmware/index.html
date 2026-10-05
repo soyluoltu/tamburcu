@@ -1,0 +1,22 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Firmware | Tambur S3009</title><meta name="description" content="Tambur S3009 firmware mimarisi, ESP32-S3 durum makinesi, güvenlik ve motor kontrol yaklaşımı."><link rel="canonical" href="https://tambur.canliol.com/firmware/"><link rel="stylesheet" href="/styles.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..800&family=Source+Serif+4:opsz,wght@8..60,200..900&display=swap"></head><body><main><header class="site-header"><a class="brand" href="/">TAMBUR / S3009</a><nav class="nav"><a href="/mechanics/">mechanics</a><a href="/drive/">drive</a><a class="active" href="/firmware/">firmware</a><a href="/hmi/">hmi</a><a href="/calculator/">calculator</a></nav></header><div class="hero"><div class="eyebrow">03 · firmware</div><h1>Kontrol sistemi<br>ve firmware mimarisi</h1><p class="lead">Tambur S3009'un motor kontrolü, çalışma durumları, güvenlik interlock'ları ve HMI haberleşmesi için önerilen ESP32-S3 firmware katmanı.</p><div class="meta"><span>ESP32-S3</span><span>STATE MACHINE</span><span>FAIL-SAFE</span></div></div><div class="layout"><article><section class="section"><div class="section-head"><span class="num">01</span><h2>Kontrol modeli</h2></div><div class="prose"><p>Firmware'i doğrudan butonlardan motor sürmeye bağlamak yerine deterministik bir durum makinesi etrafında kurmak daha güvenlidir. HMI yalnızca komut üretir; motorun gerçekten çalışıp çalışamayacağı kontrol katmanında kararlaştırılır.</p></div><div class="diagram"><svg viewBox="0 0 900 250"><g fill="#fff" stroke="#18181b"><rect x="40" y="85" width="150" height="70" rx="5"/><rect x="270" y="85" width="150" height="70" rx="5"/><rect x="500" y="85" width="150" height="70" rx="5"/><rect x="730" y="85" width="130" height="70" rx="5"/></g><g font-family="JetBrains Mono" font-size="13" fill="#18181b"><text x="82" y="125">IDLE</text><text x="305" y="125">READY</text><text x="535" y="125">RUNNING</text><text x="765" y="125">FAULT</text></g><g stroke="#d4d4d8" stroke-width="2"><line x1="190" y1="120" x2="270" y2="120"/><line x1="420" y1="120" x2="500" y2="120"/><line x1="650" y1="120" x2="730" y2="120"/></g></svg></div></section><section class="section"><div class="section-head"><span class="num">02</span><h2>Durumlar</h2></div><table class="table"><tr><td>IDLE</td><td>Motor kapalı. Başlatma koşulları beklenir.</td></tr><tr><td>READY</td><td>Interlock'lar sağlandı; RUN komutu kabul edilebilir.</td></tr><tr><td>RUNNING</td><td>Hedef hız rampası uygulanır ve çalışma süresi izlenir.</td></tr><tr><td>PAUSED</td><td>Motor güvenli şekilde durdurulur; reçete korunur.</td></tr><tr><td>FAULT</td><td>Motor çıkışı kesilir ve hata nedeni HMI'a aktarılır.</td></tr></table></section><section class="section"><div class="section-head"><span class="num">03</span><h2>Firmware iskeleti</h2></div><div class="panel code"><div class="code-head"><span>controller.cpp</span><span>c++</span></div><pre>switch (state) {
+  case IDLE:
+    motor.stop();
+    if (start_request && safety_ok()) state = READY;
+    break;
+
+  case READY:
+    if (safety_ok()) state = RUNNING;
+    else state = FAULT;
+    break;
+
+  case RUNNING:
+    motor.setTargetRpm(recipe.rpm);
+    if (!safety_ok()) state = FAULT;
+    if (stop_request) state = IDLE;
+    break;
+
+  case FAULT:
+    motor.stop();
+    reportFault(fault_code);
+    break;
+}</pre></div></section></article><aside class="toc"><a class="active" href="#">01 · firmware</a><a href="/mechanics/">02 · mechanics</a><a href="/drive/">03 · drive</a><a href="/hmi/">04 · hmi</a><a href="/calculator/">05 · calculator</a></aside></div><footer class="footer">TAMBUR S3009 · ENGINEERING DOCUMENTATION<div class="footer-links"><a href="/">overview</a><a href="/documentation/">documentation</a><a href="https://github.com/soyluoltu/tamburcu">source repository</a></div></footer></main></body></html>
