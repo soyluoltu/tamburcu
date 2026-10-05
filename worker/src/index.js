@@ -1,56 +1,10 @@
 const SITE_URL = "https://tambur.canliol.com";
 
 const SEO = `
-<link rel="canonical" href="${SITE_URL}/">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <meta name="author" content="Soylu Oltu KAYA">
 <meta name="theme-color" content="#fafaf9">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Tambur S3009">
-<meta property="og:title" content="Tambur S3009 | Teknik Dokümantasyon">
-<meta property="og:description" content="Tambur S3009 mekanik yapı, tahrik, kontrol mimarisi ve HMI teknik dokümantasyonu.">
-<meta property="og:url" content="${SITE_URL}/">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tambur S3009 | Teknik Dokümantasyon">
-<meta name="twitter:description" content="Tambur S3009 mekanik yapı, tahrik, kontrol mimarisi ve HMI teknik dokümantasyonu.">
-<script type="application/ld+json">${JSON.stringify({
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "TechArticle",
-      "@id": `${SITE_URL}/#article`,
-      "headline": "Tambur S3009 — Teknik Dokümantasyon",
-      "description": "Tambur S3009 mekanik yapı, tahrik, kontrol mimarisi ve HMI teknik dokümantasyonu.",
-      "inLanguage": "tr-TR",
-      "author": {
-        "@type": "Person",
-        "name": "Soylu Oltu KAYA",
-        "url": "https://www.youtube.com/@soyluoltu"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Canliol",
-        "url": "https://canliol.com"
-      },
-      "mainEntityOfPage": `${SITE_URL}/`,
-      "isPartOf": { "@id": `${SITE_URL}/#website` }
-    },
-    {
-      "@type": "WebSite",
-      "@id": `${SITE_URL}/#website`,
-      "url": `${SITE_URL}/`,
-      "name": "Tambur S3009",
-      "inLanguage": "tr-TR"
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": `${SITE_URL}/#breadcrumb`,
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Tambur S3009", "item": `${SITE_URL}/` }
-      ]
-    }
-  ]
-})}</script>`;
+`;
 
 export default {
   async fetch(request, env) {
@@ -66,17 +20,37 @@ export default {
       return env.ASSETS.fetch(request);
     }
 
-    if (url.pathname === "/" || url.pathname === "/index.html") {
-      const response = await env.ASSETS.fetch(new Request(`${url.origin}/index.html`, request));
-      if (!response.ok) return response;
-      const html = await response.text();
-      const body = html.replace("</head>", `${SEO}</head>`);
-      return new Response(body, {
-        status: response.status,
-        headers: new Headers(response.headers)
-      });
+    // Static assets are served normally. Clean documentation URLs are
+    // explicitly mapped to their directory index so /firmware and
+    // /firmware/ both resolve reliably on every deployment.
+    let assetRequest = request;
+    if (url.pathname === "/") {
+      assetRequest = new Request(`${url.origin}/index.html`, request);
+    } else if (!url.pathname.includes(".")) {
+      const clean = url.pathname.replace(/\/+$/, "");
+      assetRequest = new Request(`${url.origin}${clean}/index.html`, request);
     }
 
-    return env.ASSETS.fetch(request);
+    let response = await env.ASSETS.fetch(assetRequest);
+
+    // If a path is an actual asset, retry the original request.
+    if (!response.ok && assetRequest !== request) {
+      response = await env.ASSETS.fetch(request);
+    }
+
+    if (!response.ok) return response;
+
+    // Add lightweight crawler directives to HTML responses without
+    // replacing page-specific canonical/title/structured data.
+    const contentType = response.headers.get("content-type") || "";
+    if (contentType.includes("text/html")) {
+      const html = await response.text();
+      const body = html.includes("</head>") ? html.replace("</head>", `${SEO}</head>`) : html;
+      const headers = new Headers(response.headers);
+      headers.set("content-type", "text/html; charset=UTF-8");
+      return new Response(body, { status: response.status, headers });
+    }
+
+    return response;
   }
 };
