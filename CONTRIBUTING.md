@@ -4,14 +4,15 @@ Tambur Makinesi projesine katkıda bulunmak istediğiniz için teşekkür ederiz
 
 ## Önemli Lisans Bilgisi
 
-Bu proje GNU Affero General Public License v3.0 (AGPL-3.0) lisansı altında dağıtılmaktadır. Bu lisans kapsamında:
+Bu proje **[Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)** lisansı altında dağıtılmaktadır. Bu lisans kapsamında:
 
 - Projeyi kendi amaçlarınız için inceleyebilir, değiştirebilir ve kullanabilirsiniz
-- Değiştirilmiş versiyonları dağıtabilirsiniz, ancak aynı lisans altında olmalıdır
-- Değişikliklerinizi açık kaynak olarak paylaşmanız gerekmektedir
-- **Ticari kullanım kısıtlaması**: Bu proje ticari amaçlarla kullanım için tasarlanmamıştır. Ticari amaçlarla kullanmak için proje sahibinden açık izin almanız gerekmektedir.
+- Değiştirilmiş versiyonları aynı lisans (CC BY-NC 4.0) altında yeniden dağıtabilirsiniz
+- Orijinal projeye ve yaratıcısına uygun atıfta bulunmanız gerekir
+- **Ticari kullanım kısıtlaması**: Bu proje ticari amaçlarla kullanım için tasarlanmamıştır. Ticari amaçlarla kullanmak için proje sahibinden açık yazılı izin almanız gerekmektedir
+- Ek kısıtlama getiremezsiniz: Lisansın izin verdiği faaliyetleri yasaklayan hukuki şartlar veya teknolojik önlemler uygulayamazsınız
 
-Projeye katkıda bulunarak, katkınızın aynı lisans altında dağıtılacağını kabul etmiş olursunuz.
+Projeye katkıda bulunarak, katkınızın aynı lisans (CC BY-NC 4.0) altında dağıtılacağını kabul etmiş olursunuz.
 
 ## Katkıda Bulunma Süreci
 
