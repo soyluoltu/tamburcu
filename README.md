@@ -7,7 +7,8 @@ Bu proje, 2 mil üzerinde dönen silindirik bir tambur makinesinin açık kaynak
 
 ## ℹ️ Genel Özellikler ℹ️
 
-- **Güç Kaynağı**: DC⎓12-20V, 4A
+- **Güç Kaynağı**: DC⎓12-24V, 4A
+- **Motor Gücü**: 100W
 - **Maksimum Mil Deviri**: 5000 RPM
 - **Maksimum Motor Deviri**: 15000 RPM 
 - **Kontrol Sistemi**: Ayarlanabilir potansiyometre
@@ -26,7 +27,7 @@ Projeyi oluşturmak için gereken temel malzemeler:
 
 | Parça | Miktar | Açıklama |
 |-------|--------|----------|
-| DC Motor | 1 | RS-775 24V 15000Rpm |
+| DC Motor | 1 | RS-775 12-24V 100W 15000RPM |
 | Potansiyometre | 1 | 100k Ohm |
 | Resetlenebilir Sigorta | 1 | 5A |
 | Açma/Kapama Düğmesi | 1 | DPST tipi |
@@ -95,17 +96,36 @@ Bu projenin temel amacı, kullanıcıların kendi ihtiyaçlarına göre makineyi
 
 Daha fazla bilgi için [CONTRIBUTING.md](CONTRIBUTING.md) dosyasına bakınız.
 
-## ⚠️Lisans⚠️
+## ⚠️ Lisans ⚠️
 
-Bu proje [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/) lisansı altında dağıtılmaktadır.
+Bu proje **[Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)** lisansı altında dağıtılmaktadır.
 
-Bu lisans kapsamında:
-- Projeyi kopyalayabilir ve yeniden dağıtabilirsiniz
-- Projeyi uyarlayabilir, düzenleyebilir ve geliştirebilirsiniz
-- Orijinal projeye ve yaratıcısına uygun atıfta bulunmanız gerekir!
-- Projeyi ticari amaçlarla kullanamazsınız!
+### Lisansın İzinleri
 
-## ⚠️⚠️⚠️ Projenin ticari kullanımı için proje sahibinden özel izin almanız gerekmektedir. ⚠️⚠️⚠️
+| Hakkınız | Kısıt |
+|----------|-------|
+| **Kopyalama ve yeniden dağıtım** — Her ortamda, her biçimde kopyalayabilir ve dağıtabilirsiniz. | — |
+| **Uyarlanma (adaptation)** — Projeyi düzenleyebilir, dönüştürebilir ve üzerine inşa edebilirsiniz. | — |
+
+### Lisansın Şartları
+
+1. **Atıf (BY)**
+   Orijinal eserin adını, yaratıcısını/lisans sahibini belirten makul bir atıf yapmanız, lisansa bağlantı vermeniz ve değişiklik yapıp yapmadığınızı belirtmeniz gerekir. Atfı herhangi bir şekilde orijinalin sizi veya yaptığınız kullanımı onayladığı izlenimini verecek biçimde sunamazsınız.
+
+2. **Ticari Olmayan Kullanım (NC)**
+   Bu materyali **ticari amaçlarla kullanamazsınız**. Ticari kullanım, öncelikli olarak ticari kazanc veya maddi karşılık elde etme amacıyla yapılan her türlü kullanımı kapsar. Projenin ticari kullanımı için proje sahibinden yazılı izin almanız gerekmektedir.
+
+3. **Ek Kısıtlama Yok (No Additional Restrictions)**
+   Lisansın izin verdiği faaliyetleri kısıtlayan hukuki şartlar veya teknolojik önlemler (DRM vb.) uygulayamazsınız.
+
+### Kısa Özet
+
+- ✅ Kişisel, eğitim ve hobi amaçlı kullanım serbesttir
+- ✅ Değiştirilmiş versiyonları aynı lisansla paylaşabilirsiniz
+- ❌ Ticari kullanım **yasaktır** (özel izin gerekir)
+- ⚠️ Atıf yapmadan paylaşamazsınız
+
+> **Tam lisans metni için:** [https://creativecommons.org/licenses/by-nc/4.0/legalcode](https://creativecommons.org/licenses/by-nc/4.0/legalcode)
 
 ## İletişim
 
